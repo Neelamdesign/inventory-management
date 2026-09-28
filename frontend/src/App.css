@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+padding: 0;
+margin:0;
+box-sizing: border-box;
+}
+
+body{
+     font-family: "Nunito", sans-serif;
+
+}
+
+.fullpage{
+  display: flex;
+  background: rgb(241, 242, 250);
+}
+.sidebar{
+  background: purple;
+  color:#fff;
+  min-height: 100vh;
+}
+.sidebar h2{
+  font-weight: 700;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 1rem;
+  letter-spacing: 1px;
+  padding: 2rem 3rem;
+
+}
+.sidebar ul li{
+  list-style: none;
+}
+.sidebar ul{
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.sidebar ul li a{
+  color:#fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+  width: 100%;
+  display: block;
+  padding: 1rem 3rem;
+
+}
+.sidebar ul li a.active{
+  background: #fff;
+  color:purple
+}
+.sidebar ul li a svg{
+  margin-right: 1rem;
+  ;
+}
+.sidebar ul li a:hover{
+background: #fff;
+color:#000
+
+}
+.headerpart{
+  width: 100%;
+}
+
+.header{
+  padding: 2rem 2rem 2rem 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 9px 1px gainsboro;
+  gap:5rem;align-items: center;
+  background: #fff;
+}
+.search{
+  width: 100%;
+}
+.search form{
+  display: flex;
+  justify-content: space-between;
+  gap:2rem
+}
+.header p {
+  display: flex;
+  gap:0.5rem;
+  margin-bottom:0;
+  font-weight: 600;
+}
+.header p span{
+     background: purple;
+    color: #fff;
+    font-weight: 600;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: block;
+    align-content: center;
+    text-align: center;
+}
+.search .form-group{
+  position: relative;
+  width: 25%;
+
+}
+.search .form-group:first-child{
+  width: 50%;
+}
+.search .form-group svg{
+  position: absolute;
+  top:15px;
+  left:15px;
+  color:rgb(79, 79, 79)
+}
+.search .form-group .form-control{
+  padding-left: 2.5rem;
+  padding-block: 0.6rem;
+}
+
+main{
+  padding: 2rem;
+}
+.heading{
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap:2rem;
+  align-items: center;
+}
+.title h4{
+  margin-top: 2rem;
+  font-size: 30px;
+  font-weight: 800;
+  color:purple
+
+}
+a.btn, button.btn{
+  text-decoration: none;
+  background: purple;
+  color:#fff;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  align-content: center;
+  transition: 0.3s;
+  font-size: 17px;
+  font-weight: 600;
+}
+a.btn svg{
+  margin-right: 0.5rem;
+  
+}
+a.btn:hover , button.btn{
+background: #fff;
+color:purple;
+border:1px solid purple
+}
+.statictics{
+  box-shadow: 0px -9px 12px -6px gainsboro;
+  padding: 1.5rem;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  gap:1.5rem;
+  margin-bottom: 0;
+  background: #fff;
+}
+.statictics li{
+    list-style: none;
+    background: rgba(128, 0, 128, 0.255);
+    color: purple;
+    border-radius: 30px;
+    padding: 0.6rem 1rem;
+    display: flex;
+    gap:0.5rem
+}
+.statictics li span{
+     background: purple;
+    color: #fff;
+    border-radius: 10px;
+    width: 21px;
+    text-align: center;
+    height: 22px;
+    display: block;
+    align-content: center;
+    font-size: 13px;
+}
+.statictics li:nth-child(2){
+  background: rgba(0, 128, 0, 0.258);
+  color:green
+}
+.statictics li:nth-child(2) span{
+  background: green;
+}
+.statictics li:nth-child(4){
+  background: rgba(128, 0, 0, 0.258);
+  color:rgb(128, 0, 4)
+}
+.statictics li:nth-child(4) span{
+  background: rgb(185, 25, 30);
+}
+.statictics li:nth-child(3){
+  background: rgba(128, 100, 0, 0.258);
+  color:rgb(183, 162, 4)
+}
+.statictics li:nth-child(3) span{
+  background: rgb(183, 162, 4);
+}
+
+table tr th, table tr td{
+  padding: 1rem;
+  
+}
+table tbody tr{
+  background: #fff;
+  border-bottom: 1px solid gainsboro;
+
+}
+table tr td:nth-child(7) span{
+    background: rgba(0, 128, 38, 0.255);
+    color: rgb(2, 128, 0);
+    border-radius: 30px;
+    padding: 0.6rem 1rem;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+table tr td:nth-child(2){
+  font-weight: 700;
+}
+table tr td:nth-child(3) span{
+    background: rgba(128, 66, 0, 0.255);
+    color: rgb(188, 155, 6);
+    border-radius: 30px;
+    padding: 0.6rem 1rem;
+    font-size: 13px;
+    font-weight: 600;
+}
+.quantity-control{
+ background-color: rgba(211, 213, 225, 0.511);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-control button{
+  border:none;
+  outline: none;
+  padding: 0.5rem 0.7rem;
+  background: transparent;
+}
+.quantity-control span{
+  padding: 0.5rems;
+}
+table .actions{
+  display: flex;
+  gap:0.5rem;
+}
+table .actions button{
+background: rgba(0, 0, 255, 0.192);
+color:blue;
+border:none;
+padding: 0.3rem 0.5rem;
+border-radius: 7px;
+}
+
+table .actions .delete{
+  background: rgba(255, 0, 0, 0.205);
+  color:red;
+  font-weight: 800;
+}
+form.productform{
+  background: #fff;
+  padding: 3rem;
+  border-radius: 1rem;
+  margin-top: 3rem;
+}
+.addform label{
+  font-weight: 700;
+
+}
+.addform .form-control{
+  margin-top: 0.5rem;
+padding: 0.7rem;
+}
+.addform {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:2rem 3rem
+}
+
+form.productform button{
+  margin-top: 3rem;
+  background: purple;
+  color:#fff
+}
+form.productform button:hover{
+    border:1px solid purple;
+
+}
